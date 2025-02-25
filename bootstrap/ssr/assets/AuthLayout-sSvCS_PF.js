@@ -1,6 +1,6 @@
 import { defineComponent, mergeProps, unref, withCtx, createVNode, toDisplayString, useSSRContext, renderSlot } from "vue";
 import { ssrRenderAttrs, ssrRenderComponent, ssrInterpolate, ssrRenderSlot } from "vue/server-renderer";
-import { a as _sfc_main$2 } from "./AppLogoIcon-xe2zDqH9.js";
+import { a as _sfc_main$2 } from "./AppLogoIcon-Ds8xh4o4.js";
 import { Link } from "@inertiajs/vue3";
 const _sfc_main$1 = /* @__PURE__ */ defineComponent({
   __name: "AuthSimpleLayout",

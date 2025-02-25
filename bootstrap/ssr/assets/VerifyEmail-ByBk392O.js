@@ -1,8 +1,8 @@
 import { defineComponent, mergeProps, withCtx, unref, createBlock, createCommentVNode, createTextVNode, openBlock, createVNode, withModifiers, useSSRContext } from "vue";
 import { ssrRenderComponent } from "vue/server-renderer";
 import { _ as _sfc_main$3 } from "./TextLink-DOKqnLUv.js";
-import { _ as _sfc_main$2 } from "./AppLogoIcon-xe2zDqH9.js";
-import { _ as _sfc_main$1 } from "./AuthLayout-BFciNwP-.js";
+import { _ as _sfc_main$2 } from "./AppLogoIcon-Ds8xh4o4.js";
+import { _ as _sfc_main$1 } from "./AuthLayout-sSvCS_PF.js";
 import { useForm, Head } from "@inertiajs/vue3";
 import { LoaderCircle } from "lucide-vue-next";
 import "clsx";

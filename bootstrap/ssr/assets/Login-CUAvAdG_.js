@@ -1,12 +1,12 @@
 import { defineComponent, computed, unref, mergeProps, withCtx, renderSlot, createVNode, useSSRContext, createTextVNode, createBlock, createCommentVNode, openBlock, toDisplayString, withModifiers } from "vue";
 import { ssrRenderComponent, ssrRenderSlot, ssrInterpolate, ssrRenderAttr } from "vue/server-renderer";
-import { _ as _sfc_main$3, a as _sfc_main$5 } from "./Label-i2VVf5Sf.js";
+import { _ as _sfc_main$3, a as _sfc_main$5 } from "./Label-Ci_t_JxO.js";
 import { _ as _sfc_main$6 } from "./TextLink-DOKqnLUv.js";
-import { c as cn, _ as _sfc_main$7 } from "./AppLogoIcon-xe2zDqH9.js";
+import { c as cn, _ as _sfc_main$7 } from "./AppLogoIcon-Ds8xh4o4.js";
 import { Check, LoaderCircle } from "lucide-vue-next";
 import { useForwardPropsEmits, CheckboxRoot, CheckboxIndicator } from "radix-vue";
-import { _ as _sfc_main$4 } from "./Input-D5Mz7eRZ.js";
-import { _ as _sfc_main$2 } from "./AuthLayout-BFciNwP-.js";
+import { _ as _sfc_main$4 } from "./Input-CozPTVk4.js";
+import { _ as _sfc_main$2 } from "./AuthLayout-sSvCS_PF.js";
 import { useForm, Head } from "@inertiajs/vue3";
 import "clsx";
 import "tailwind-merge";
@@ -49,12 +49,12 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
               default: withCtx((_2, _push3, _parent3, _scopeId2) => {
                 if (_push3) {
                   ssrRenderSlot(_ctx.$slots, "default", {}, () => {
-                    _push3(ssrRenderComponent(unref(Check), { class: "size-3.5 stroke-[3]" }, null, _parent3, _scopeId2));
+                    _push3(ssrRenderComponent(unref(Check), { class: "size-3.5 stroke-3" }, null, _parent3, _scopeId2));
                   }, _push3, _parent3, _scopeId2);
                 } else {
                   return [
                     renderSlot(_ctx.$slots, "default", {}, () => [
-                      createVNode(unref(Check), { class: "size-3.5 stroke-[3]" })
+                      createVNode(unref(Check), { class: "size-3.5 stroke-3" })
                     ])
                   ];
                 }
@@ -66,7 +66,7 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
               createVNode(unref(CheckboxIndicator), { class: "flex h-full w-full items-center justify-center text-current" }, {
                 default: withCtx(() => [
                   renderSlot(_ctx.$slots, "default", {}, () => [
-                    createVNode(unref(Check), { class: "size-3.5 stroke-[3]" })
+                    createVNode(unref(Check), { class: "size-3.5 stroke-3" })
                   ])
                 ]),
                 _: 3

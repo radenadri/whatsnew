@@ -3,14 +3,14 @@ import { ssrRenderAttrs, ssrRenderList, ssrRenderClass, ssrRenderVNode, ssrInter
 import { Head } from "@inertiajs/vue3";
 import { u as useAppearance } from "../app.js";
 import { Sun, Moon, Monitor } from "lucide-vue-next";
-import { _ as _sfc_main$3, a as _sfc_main$4 } from "./Layout-DHOvJi-W.js";
-import { _ as _sfc_main$2 } from "./AppLayout-BOjmAFA8.js";
-import "./AppLogoIcon-xe2zDqH9.js";
+import { _ as _sfc_main$3, a as _sfc_main$4 } from "./Layout-CqP337Jp.js";
+import { _ as _sfc_main$2 } from "./AppLayout-CA5Rf5nP.js";
+import "./AppLogoIcon-Ds8xh4o4.js";
 import "clsx";
 import "tailwind-merge";
 import "radix-vue";
 import "class-variance-authority";
-import "./Input-D5Mz7eRZ.js";
+import "./Input-CozPTVk4.js";
 import "@vueuse/core";
 const _sfc_main$1 = /* @__PURE__ */ defineComponent({
   __name: "AppearanceTabs",
@@ -32,7 +32,7 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
       ssrRenderList(tabs, ({ value, Icon, label }) => {
         _push(`<button class="${ssrRenderClass([
           "flex items-center rounded-md px-3.5 py-1.5 transition-colors",
-          unref(appearance) === value ? "bg-white shadow-sm dark:bg-neutral-700 dark:text-neutral-100" : "text-neutral-500 hover:bg-neutral-200/60 hover:text-black dark:text-neutral-400 dark:hover:bg-neutral-700/60"
+          unref(appearance) === value ? "bg-white shadow-xs dark:bg-neutral-700 dark:text-neutral-100" : "text-neutral-500 hover:bg-neutral-200/60 hover:text-black dark:text-neutral-400 dark:hover:bg-neutral-700/60"
         ])}">`);
         ssrRenderVNode(_push, createVNode(resolveDynamicComponent(Icon), { class: "-ml-1 h-4 w-4" }, null), _parent);
         _push(`<span class="ml-1.5 text-sm">${ssrInterpolate(label)}</span></button>`);

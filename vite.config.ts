@@ -1,12 +1,13 @@
+import tailwindcss from '@tailwindcss/vite';
 import vue from '@vitejs/plugin-vue';
 import autoprefixer from 'autoprefixer';
 import laravel from 'laravel-vite-plugin';
 import path from 'path';
-import tailwindcss from 'tailwindcss';
 import { defineConfig } from 'vite';
 
 export default defineConfig({
     plugins: [
+        tailwindcss(),
         laravel({
             input: ['resources/js/app.ts'],
             refresh: true,
@@ -27,7 +28,7 @@ export default defineConfig({
     },
     css: {
         postcss: {
-            plugins: [tailwindcss, autoprefixer],
+            plugins: [autoprefixer],
         },
     },
 });

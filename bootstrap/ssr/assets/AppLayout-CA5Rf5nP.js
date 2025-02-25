@@ -2,9 +2,9 @@ import { defineComponent, unref, mergeProps, withCtx, renderSlot, useSSRContext,
 import { ssrRenderComponent, ssrRenderSlot, ssrRenderAttrs, ssrRenderClass, ssrInterpolate, ssrRenderVNode, ssrRenderStyle, ssrRenderList, ssrRenderAttr } from "vue/server-renderer";
 import { cva } from "class-variance-authority";
 import { useForwardPropsEmits, DialogRoot, DialogClose, DialogDescription, DialogTitle, DialogTrigger, DialogPortal, DialogOverlay, DialogContent, createContext, Primitive, TooltipRoot, TooltipPortal, TooltipContent, TooltipTrigger, TooltipProvider, Separator, AvatarRoot, AvatarFallback, AvatarImage, DropdownMenuRoot, DropdownMenuCheckboxItem, DropdownMenuItemIndicator, DropdownMenuPortal, DropdownMenuContent, DropdownMenuGroup, useForwardProps, DropdownMenuItem, DropdownMenuLabel, DropdownMenuRadioGroup, DropdownMenuRadioItem, DropdownMenuSeparator, DropdownMenuSub, DropdownMenuSubContent, DropdownMenuSubTrigger, DropdownMenuTrigger } from "radix-vue";
-import { c as cn, _ as _sfc_main$1a, a as _sfc_main$1b } from "./AppLogoIcon-xe2zDqH9.js";
+import { c as cn, _ as _sfc_main$1a, a as _sfc_main$1b } from "./AppLogoIcon-Ds8xh4o4.js";
 import { X, PanelLeft, Check, Circle, ChevronRight, Settings, LogOut, ChevronsUpDown, LayoutGrid, Folder, BookOpen, MoreHorizontal } from "lucide-vue-next";
-import { _ as _sfc_main$19 } from "./Input-D5Mz7eRZ.js";
+import { _ as _sfc_main$19 } from "./Input-CozPTVk4.js";
 import { useMediaQuery, useVModel, useEventListener } from "@vueuse/core";
 import { usePage, Link } from "@inertiajs/vue3";
 const _sfc_main$18 = /* @__PURE__ */ defineComponent({
@@ -277,7 +277,7 @@ const _sfc_main$11 = /* @__PURE__ */ defineComponent({
               default: withCtx((_2, _push3, _parent3, _scopeId2) => {
                 if (_push3) {
                   ssrRenderSlot(_ctx.$slots, "default", {}, null, _push3, _parent3, _scopeId2);
-                  _push3(ssrRenderComponent(unref(DialogClose), { class: "absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-secondary" }, {
+                  _push3(ssrRenderComponent(unref(DialogClose), { class: "absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-hidden focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-secondary" }, {
                     default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                       if (_push4) {
                         _push4(ssrRenderComponent(unref(X), { class: "h-4 w-4 text-muted-foreground" }, null, _parent4, _scopeId3));
@@ -292,7 +292,7 @@ const _sfc_main$11 = /* @__PURE__ */ defineComponent({
                 } else {
                   return [
                     renderSlot(_ctx.$slots, "default"),
-                    createVNode(unref(DialogClose), { class: "absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-secondary" }, {
+                    createVNode(unref(DialogClose), { class: "absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-hidden focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-secondary" }, {
                       default: withCtx(() => [
                         createVNode(unref(X), { class: "h-4 w-4 text-muted-foreground" })
                       ]),
@@ -311,7 +311,7 @@ const _sfc_main$11 = /* @__PURE__ */ defineComponent({
               }, { ...unref(forwarded), ..._ctx.$attrs }), {
                 default: withCtx(() => [
                   renderSlot(_ctx.$slots, "default"),
-                  createVNode(unref(DialogClose), { class: "absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-secondary" }, {
+                  createVNode(unref(DialogClose), { class: "absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-hidden focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-secondary" }, {
                     default: withCtx(() => [
                       createVNode(unref(X), { class: "h-4 w-4 text-muted-foreground" })
                     ]),
@@ -359,7 +359,7 @@ const _sfc_main$10 = /* @__PURE__ */ defineComponent({
     return (_ctx, _push, _parent, _attrs) => {
       if (_ctx.collapsible === "none") {
         _push(`<div${ssrRenderAttrs(mergeProps({
-          class: unref(cn)("flex h-full w-[--sidebar-width] flex-col bg-sidebar text-sidebar-foreground", props.class)
+          class: unref(cn)("flex h-full w-(--sidebar-width) flex-col bg-sidebar text-sidebar-foreground", props.class)
         }, _ctx.$attrs, _attrs))}>`);
         ssrRenderSlot(_ctx.$slots, "default", {}, null, _push, _parent);
         _push(`</div>`);
@@ -371,7 +371,7 @@ const _sfc_main$10 = /* @__PURE__ */ defineComponent({
                 "data-sidebar": "sidebar",
                 "data-mobile": "true",
                 side: _ctx.side,
-                class: "w-[--sidebar-width] bg-sidebar p-0 text-sidebar-foreground [&>button]:hidden",
+                class: "w-(--sidebar-width) bg-sidebar p-0 text-sidebar-foreground [&>button]:hidden",
                 style: {
                   "--sidebar-width": unref(SIDEBAR_WIDTH_MOBILE)
                 }
@@ -397,7 +397,7 @@ const _sfc_main$10 = /* @__PURE__ */ defineComponent({
                   "data-sidebar": "sidebar",
                   "data-mobile": "true",
                   side: _ctx.side,
-                  class: "w-[--sidebar-width] bg-sidebar p-0 text-sidebar-foreground [&>button]:hidden",
+                  class: "w-(--sidebar-width) bg-sidebar p-0 text-sidebar-foreground [&>button]:hidden",
                   style: {
                     "--sidebar-width": unref(SIDEBAR_WIDTH_MOBILE)
                   }
@@ -423,20 +423,20 @@ const _sfc_main$10 = /* @__PURE__ */ defineComponent({
           "data-side": _ctx.side
         }, _attrs))}><div class="${ssrRenderClass(
           unref(cn)(
-            "relative h-svh w-[--sidebar-width] bg-transparent transition-[width] duration-200 ease-linear",
+            "relative h-svh w-(--sidebar-width) bg-transparent transition-[width] duration-200 ease-linear",
             "group-data-[collapsible=offcanvas]:w-0",
             "group-data-[side=right]:rotate-180",
-            _ctx.variant === "floating" || _ctx.variant === "inset" ? "group-data-[collapsible=icon]:w-[calc(var(--sidebar-width-icon)_+_theme(spacing.4))]" : "group-data-[collapsible=icon]:w-[--sidebar-width-icon]"
+            _ctx.variant === "floating" || _ctx.variant === "inset" ? "group-data-[collapsible=icon]:w-[calc(var(--sidebar-width-icon)+(--spacing(4)))]" : "group-data-[collapsible=icon]:w-(--sidebar-width-icon)"
           )
         )}"></div><div${ssrRenderAttrs(mergeProps({
           class: unref(cn)(
-            "fixed inset-y-0 z-10 hidden h-svh w-[--sidebar-width] transition-[left,right,width] duration-200 ease-linear md:flex",
+            "fixed inset-y-0 z-10 hidden h-svh w-(--sidebar-width) transition-[left,right,width] duration-200 ease-linear md:flex",
             _ctx.side === "left" ? "left-0 group-data-[collapsible=offcanvas]:left-[calc(var(--sidebar-width)*-1)]" : "right-0 group-data-[collapsible=offcanvas]:right-[calc(var(--sidebar-width)*-1)]",
             // Adjust the padding for floating and inset variants.
-            _ctx.variant === "floating" || _ctx.variant === "inset" ? "p-2 group-data-[collapsible=icon]:w-[calc(var(--sidebar-width-icon)_+_theme(spacing.4)_+2px)]" : "group-data-[collapsible=icon]:w-[--sidebar-width-icon] group-data-[side=left]:border-r group-data-[side=right]:border-l",
+            _ctx.variant === "floating" || _ctx.variant === "inset" ? "p-2 group-data-[collapsible=icon]:w-[calc(var(--sidebar-width-icon)+(--spacing(4))+2px)]" : "group-data-[collapsible=icon]:w-(--sidebar-width-icon) group-data-[side=left]:border-r group-data-[side=right]:border-l",
             props.class
           )
-        }, _ctx.$attrs))}><div data-sidebar="sidebar" class="flex h-full w-full flex-col bg-sidebar group-data-[variant=floating]:rounded-lg group-data-[variant=floating]:border group-data-[variant=floating]:border-sidebar-border group-data-[variant=floating]:shadow">`);
+        }, _ctx.$attrs))}><div data-sidebar="sidebar" class="flex h-full w-full flex-col bg-sidebar group-data-[variant=floating]:rounded-lg group-data-[variant=floating]:border group-data-[variant=floating]:border-sidebar-border group-data-[variant=floating]:shadow-sm">`);
         ssrRenderSlot(_ctx.$slots, "default", {}, null, _push, _parent);
         _push(`</div></div></div>`);
       }
@@ -537,9 +537,9 @@ const _sfc_main$Y = /* @__PURE__ */ defineComponent({
         as: _ctx.as,
         "as-child": _ctx.asChild,
         class: unref(cn)(
-          "absolute right-3 top-3.5 flex aspect-square w-5 items-center justify-center rounded-md p-0 text-sidebar-foreground outline-none ring-sidebar-ring transition-transform hover:bg-sidebar-accent hover:text-sidebar-accent-foreground focus-visible:ring-2 [&>svg]:size-4 [&>svg]:shrink-0",
+          "absolute right-3 top-3.5 flex aspect-square w-5 items-center justify-center rounded-md p-0 text-sidebar-foreground outline-hidden ring-sidebar-ring transition-transform hover:bg-sidebar-accent hover:text-sidebar-accent-foreground focus-visible:ring-2 [&>svg]:size-4 [&>svg]:shrink-0",
           // Increases the hit area of the button on mobile.
-          "after:absolute after:-inset-2 after:md:hidden",
+          "after:absolute after:-inset-2 md:after:hidden",
           "group-data-[collapsible=icon]:hidden",
           props.class
         )
@@ -604,7 +604,7 @@ const _sfc_main$W = /* @__PURE__ */ defineComponent({
         as: _ctx.as,
         "as-child": _ctx.asChild,
         class: unref(cn)(
-          "flex h-8 shrink-0 items-center rounded-md px-2 text-xs font-medium text-sidebar-foreground/70 outline-none ring-sidebar-ring transition-[margin,opa] duration-200 ease-linear focus-visible:ring-2 [&>svg]:size-4 [&>svg]:shrink-0",
+          "flex h-8 shrink-0 items-center rounded-md px-2 text-xs font-medium text-sidebar-foreground/70 outline-hidden ring-sidebar-ring transition-[margin,opa] duration-200 ease-linear focus-visible:ring-2 [&>svg]:size-4 [&>svg]:shrink-0",
           "group-data-[collapsible=icon]:-mt-8 group-data-[collapsible=icon]:opacity-0",
           props.class
         )
@@ -698,7 +698,7 @@ const _sfc_main$T = /* @__PURE__ */ defineComponent({
       _push(`<main${ssrRenderAttrs(mergeProps({
         class: unref(cn)(
           "relative flex min-h-svh flex-1 flex-col bg-background",
-          "peer-data-[variant=inset]:min-h-[calc(100svh-theme(spacing.4))] md:peer-data-[variant=inset]:m-2 md:peer-data-[state=collapsed]:peer-data-[variant=inset]:ml-2 md:peer-data-[variant=inset]:ml-0 md:peer-data-[variant=inset]:rounded-xl md:peer-data-[variant=inset]:shadow",
+          "peer-data-[variant=inset]:min-h-[calc(100svh-(--spacing(4)))] md:peer-data-[variant=inset]:m-2 md:peer-data-[variant=inset]:peer-data-[state=collapsed]:ml-2 md:peer-data-[variant=inset]:ml-0 md:peer-data-[variant=inset]:rounded-xl md:peer-data-[variant=inset]:shadow-sm",
           props.class
         )
       }, _attrs))}>`);
@@ -752,9 +752,9 @@ const _sfc_main$R = /* @__PURE__ */ defineComponent({
       _push(ssrRenderComponent(unref(Primitive), mergeProps({
         "data-sidebar": "menu-action",
         class: unref(cn)(
-          "absolute right-1 top-1.5 flex aspect-square w-5 items-center justify-center rounded-md p-0 text-sidebar-foreground outline-none ring-sidebar-ring transition-transform hover:bg-sidebar-accent hover:text-sidebar-accent-foreground focus-visible:ring-2 peer-hover/menu-button:text-sidebar-accent-foreground [&>svg]:size-4 [&>svg]:shrink-0",
+          "absolute right-1 top-1.5 flex aspect-square w-5 items-center justify-center rounded-md p-0 text-sidebar-foreground outline-hidden ring-sidebar-ring transition-transform hover:bg-sidebar-accent hover:text-sidebar-accent-foreground focus-visible:ring-2 peer-hover/menu-button:text-sidebar-accent-foreground [&>svg]:size-4 [&>svg]:shrink-0",
           // Increases the hit area of the button on mobile.
-          "after:absolute after:-inset-2 after:md:hidden",
+          "after:absolute after:-inset-2 md:after:hidden",
           "peer-data-[size=sm]/menu-button:top-1",
           "peer-data-[size=default]/menu-button:top-1.5",
           "peer-data-[size=lg]/menu-button:top-2.5",
@@ -1210,7 +1210,7 @@ const _sfc_main$I = /* @__PURE__ */ defineComponent({
         _push(`<!---->`);
       }
       _push(ssrRenderComponent(_sfc_main$J, {
-        class: "h-4 max-w-[--skeleton-width] flex-1",
+        class: "h-4 max-w-(--skeleton-width) flex-1",
         "data-sidebar": "menu-skeleton-text",
         style: { "--skeleton-width": width.value }
       }, null, _parent));
@@ -1272,7 +1272,7 @@ const _sfc_main$G = /* @__PURE__ */ defineComponent({
         "data-size": _ctx.size,
         "data-active": _ctx.isActive,
         class: unref(cn)(
-          "flex h-7 min-w-0 -translate-x-px items-center gap-2 overflow-hidden rounded-md px-2 text-sidebar-foreground outline-none ring-sidebar-ring hover:bg-sidebar-accent hover:text-sidebar-accent-foreground focus-visible:ring-2 active:bg-sidebar-accent active:text-sidebar-accent-foreground disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50 [&>span:last-child]:truncate [&>svg]:size-4 [&>svg]:shrink-0 [&>svg]:text-sidebar-accent-foreground",
+          "flex h-7 min-w-0 -translate-x-px items-center gap-2 overflow-hidden rounded-md px-2 text-sidebar-foreground outline-hidden ring-sidebar-ring hover:bg-sidebar-accent hover:text-sidebar-accent-foreground focus-visible:ring-2 active:bg-sidebar-accent active:text-sidebar-accent-foreground disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50 [&>span:last-child]:truncate [&>svg]:size-4 [&>svg]:shrink-0 [&>svg]:text-sidebar-accent-foreground",
           "data-[active=true]:bg-sidebar-accent data-[active=true]:text-sidebar-accent-foreground",
           _ctx.size === "sm" && "text-xs",
           _ctx.size === "md" && "text-sm",
@@ -1351,7 +1351,7 @@ const _sfc_main$F = /* @__PURE__ */ defineComponent({
             _push2(`<div style="${ssrRenderStyle({
               "--sidebar-width": unref(SIDEBAR_WIDTH),
               "--sidebar-width-icon": unref(SIDEBAR_WIDTH_ICON)
-            })}" class="${ssrRenderClass(unref(cn)("group/sidebar-wrapper flex min-h-svh w-full text-sidebar-foreground has-[[data-variant=inset]]:bg-sidebar", props.class))}"${_scopeId}>`);
+            })}" class="${ssrRenderClass(unref(cn)("group/sidebar-wrapper flex min-h-svh w-full text-sidebar-foreground has-data-[variant=inset]:bg-sidebar", props.class))}"${_scopeId}>`);
             ssrRenderSlot(_ctx.$slots, "default", {}, null, _push2, _parent2, _scopeId);
             _push2(`</div>`);
           } else {
@@ -1361,7 +1361,7 @@ const _sfc_main$F = /* @__PURE__ */ defineComponent({
                   "--sidebar-width": unref(SIDEBAR_WIDTH),
                   "--sidebar-width-icon": unref(SIDEBAR_WIDTH_ICON)
                 },
-                class: unref(cn)("group/sidebar-wrapper flex min-h-svh w-full text-sidebar-foreground has-[[data-variant=inset]]:bg-sidebar", props.class)
+                class: unref(cn)("group/sidebar-wrapper flex min-h-svh w-full text-sidebar-foreground has-data-[variant=inset]:bg-sidebar", props.class)
               }, [
                 renderSlot(_ctx.$slots, "default")
               ], 6)
@@ -1396,9 +1396,9 @@ const _sfc_main$E = /* @__PURE__ */ defineComponent({
         title: "Toggle Sidebar",
         class: unref(cn)(
           "absolute inset-y-0 z-20 hidden w-4 -translate-x-1/2 transition-all ease-linear after:absolute after:inset-y-0 after:left-1/2 after:w-[2px] hover:after:bg-sidebar-border group-data-[side=left]:-right-4 group-data-[side=right]:left-0 sm:flex",
-          "[[data-side=left]_&]:cursor-w-resize [[data-side=right]_&]:cursor-e-resize",
+          "in-data-[side=left]:cursor-w-resize in-data-[side=right]:cursor-e-resize",
           "[[data-side=left][data-state=collapsed]_&]:cursor-e-resize [[data-side=right][data-state=collapsed]_&]:cursor-w-resize",
-          "group-data-[collapsible=offcanvas]:translate-x-0 group-data-[collapsible=offcanvas]:after:left-full group-data-[collapsible=offcanvas]:hover:bg-sidebar",
+          "group-data-[collapsible=offcanvas]:translate-x-0 group-data-[collapsible=offcanvas]:after:left-full hover:group-data-[collapsible=offcanvas]:bg-sidebar",
           "[[data-side=left][data-collapsible=offcanvas]_&]:-right-2",
           "[[data-side=right][data-collapsible=offcanvas]_&]:-left-2",
           props.class
@@ -1544,7 +1544,7 @@ _sfc_main$B.setup = (props, ctx) => {
   return _sfc_setup$B ? _sfc_setup$B(props, ctx) : void 0;
 };
 const sidebarMenuButtonVariants = cva(
-  "peer/menu-button flex w-full items-center gap-2 overflow-hidden rounded-md p-2 text-left text-sm outline-none ring-sidebar-ring transition-[width,height,padding] hover:bg-sidebar-accent hover:text-sidebar-accent-foreground focus-visible:ring-2 active:bg-sidebar-accent active:text-sidebar-accent-foreground disabled:pointer-events-none disabled:opacity-50 group-has-[[data-sidebar=menu-action]]/menu-item:pr-8 aria-disabled:pointer-events-none aria-disabled:opacity-50 data-[active=true]:bg-sidebar-accent data-[active=true]:font-medium data-[active=true]:text-sidebar-accent-foreground data-[state=open]:hover:bg-sidebar-accent data-[state=open]:hover:text-sidebar-accent-foreground group-data-[collapsible=icon]:!size-8 group-data-[collapsible=icon]:!p-2 [&>span:last-child]:truncate [&>svg]:size-4 [&>svg]:shrink-0",
+  "peer/menu-button flex w-full items-center gap-2 overflow-hidden rounded-md p-2 text-left text-sm outline-hidden ring-sidebar-ring transition-[width,height,padding] hover:bg-sidebar-accent hover:text-sidebar-accent-foreground focus-visible:ring-2 active:bg-sidebar-accent active:text-sidebar-accent-foreground disabled:pointer-events-none disabled:opacity-50 group-has-data-[sidebar=menu-action]/menu-item:pr-8 aria-disabled:pointer-events-none aria-disabled:opacity-50 data-[active=true]:bg-sidebar-accent data-[active=true]:font-medium data-[active=true]:text-sidebar-accent-foreground data-[state=open]:hover:bg-sidebar-accent data-[state=open]:hover:text-sidebar-accent-foreground group-data-[collapsible=icon]:size-8! group-data-[collapsible=icon]:p-2! [&>span:last-child]:truncate [&>svg]:size-4 [&>svg]:shrink-0",
   {
     variants: {
       variant: {
@@ -1554,7 +1554,7 @@ const sidebarMenuButtonVariants = cva(
       size: {
         default: "h-8 text-sm",
         sm: "h-7 text-xs",
-        lg: "h-12 text-sm group-data-[collapsible=icon]:!p-0"
+        lg: "h-12 text-sm group-data-[collapsible=icon]:p-0!"
       }
     },
     defaultVariants: {
@@ -2273,7 +2273,7 @@ const _sfc_main$r = /* @__PURE__ */ defineComponent({
     return (_ctx, _push, _parent, _attrs) => {
       _push(ssrRenderComponent(unref(DropdownMenuCheckboxItem), mergeProps(unref(forwarded), {
         class: unref(cn)(
-          "relative flex cursor-default select-none items-center rounded-sm py-1.5 pl-8 pr-2 text-sm outline-none transition-colors focus:bg-accent focus:text-accent-foreground data-[disabled]:pointer-events-none data-[disabled]:opacity-50",
+          "relative flex cursor-default select-none items-center rounded-sm py-1.5 pl-8 pr-2 text-sm outline-hidden transition-colors focus:bg-accent focus:text-accent-foreground data-disabled:pointer-events-none data-disabled:opacity-50",
           props.class
         )
       }, _attrs), {
@@ -2450,7 +2450,7 @@ const _sfc_main$o = /* @__PURE__ */ defineComponent({
     return (_ctx, _push, _parent, _attrs) => {
       _push(ssrRenderComponent(unref(DropdownMenuItem), mergeProps(unref(forwardedProps), {
         class: unref(cn)(
-          "relative flex cursor-default select-none items-center gap-2 rounded-sm px-2 py-1.5 text-sm outline-none transition-colors focus:bg-accent focus:text-accent-foreground data-[disabled]:pointer-events-none data-[disabled]:opacity-50 [&>svg]:size-4 [&>svg]:shrink-0",
+          "relative flex cursor-default select-none items-center gap-2 rounded-sm px-2 py-1.5 text-sm outline-hidden transition-colors focus:bg-accent focus:text-accent-foreground data-disabled:pointer-events-none data-disabled:opacity-50 [&>svg]:size-4 [&>svg]:shrink-0",
           _ctx.inset && "pl-8",
           props.class
         )
@@ -2573,7 +2573,7 @@ const _sfc_main$l = /* @__PURE__ */ defineComponent({
     return (_ctx, _push, _parent, _attrs) => {
       _push(ssrRenderComponent(unref(DropdownMenuRadioItem), mergeProps(unref(forwarded), {
         class: unref(cn)(
-          "relative flex cursor-default select-none items-center rounded-sm py-1.5 pl-8 pr-2 text-sm outline-none transition-colors focus:bg-accent focus:text-accent-foreground data-[disabled]:pointer-events-none data-[disabled]:opacity-50",
+          "relative flex cursor-default select-none items-center rounded-sm py-1.5 pl-8 pr-2 text-sm outline-hidden transition-colors focus:bg-accent focus:text-accent-foreground data-disabled:pointer-events-none data-disabled:opacity-50",
           props.class
         )
       }, _attrs), {
@@ -2779,7 +2779,7 @@ const _sfc_main$g = /* @__PURE__ */ defineComponent({
     return (_ctx, _push, _parent, _attrs) => {
       _push(ssrRenderComponent(unref(DropdownMenuSubTrigger), mergeProps(unref(forwardedProps), {
         class: unref(cn)(
-          "flex cursor-default select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none focus:bg-accent data-[state=open]:bg-accent",
+          "flex cursor-default select-none items-center rounded-sm px-2 py-1.5 text-sm outline-hidden focus:bg-accent data-[state=open]:bg-accent",
           props.class
         )
       }, _attrs), {
@@ -2817,7 +2817,7 @@ const _sfc_main$f = /* @__PURE__ */ defineComponent({
     const props = __props;
     const forwardedProps = useForwardProps(props);
     return (_ctx, _push, _parent, _attrs) => {
-      _push(ssrRenderComponent(unref(DropdownMenuTrigger), mergeProps({ class: "outline-none" }, unref(forwardedProps), _attrs), {
+      _push(ssrRenderComponent(unref(DropdownMenuTrigger), mergeProps({ class: "outline-hidden" }, unref(forwardedProps), _attrs), {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
             ssrRenderSlot(_ctx.$slots, "default", {}, null, _push2, _parent2, _scopeId);
@@ -3041,7 +3041,7 @@ const _sfc_main$d = /* @__PURE__ */ defineComponent({
                           _: 1
                         }, _parent4, _scopeId3));
                         _push4(ssrRenderComponent(unref(_sfc_main$q), {
-                          class: "w-[--radix-dropdown-menu-trigger-width] min-w-56 rounded-lg",
+                          class: "w-(--radix-dropdown-menu-trigger-width) min-w-56 rounded-lg",
                           side: "bottom",
                           align: "end",
                           "side-offset": 4
@@ -3075,7 +3075,7 @@ const _sfc_main$d = /* @__PURE__ */ defineComponent({
                             _: 1
                           }),
                           createVNode(unref(_sfc_main$q), {
-                            class: "w-[--radix-dropdown-menu-trigger-width] min-w-56 rounded-lg",
+                            class: "w-(--radix-dropdown-menu-trigger-width) min-w-56 rounded-lg",
                             side: "bottom",
                             align: "end",
                             "side-offset": 4
@@ -3110,7 +3110,7 @@ const _sfc_main$d = /* @__PURE__ */ defineComponent({
                           _: 1
                         }),
                         createVNode(unref(_sfc_main$q), {
-                          class: "w-[--radix-dropdown-menu-trigger-width] min-w-56 rounded-lg",
+                          class: "w-(--radix-dropdown-menu-trigger-width) min-w-56 rounded-lg",
                           side: "bottom",
                           align: "end",
                           "side-offset": 4
@@ -3150,7 +3150,7 @@ const _sfc_main$d = /* @__PURE__ */ defineComponent({
                         _: 1
                       }),
                       createVNode(unref(_sfc_main$q), {
-                        class: "w-[--radix-dropdown-menu-trigger-width] min-w-56 rounded-lg",
+                        class: "w-(--radix-dropdown-menu-trigger-width) min-w-56 rounded-lg",
                         side: "bottom",
                         align: "end",
                         "side-offset": 4
@@ -3795,7 +3795,7 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
   },
   setup(__props) {
     return (_ctx, _push, _parent, _attrs) => {
-      _push(`<header${ssrRenderAttrs(mergeProps({ class: "flex h-16 shrink-0 items-center gap-2 border-b border-sidebar-border/70 px-6 transition-[width,height] ease-linear group-has-[[data-collapsible=icon]]/sidebar-wrapper:h-12 md:px-4" }, _attrs))}><div class="flex items-center gap-2">`);
+      _push(`<header${ssrRenderAttrs(mergeProps({ class: "flex h-16 shrink-0 items-center gap-2 border-b border-sidebar-border/70 px-6 transition-[width,height] ease-linear group-has-data-[collapsible=icon]/sidebar-wrapper:h-12 md:px-4" }, _attrs))}><div class="flex items-center gap-2">`);
       _push(ssrRenderComponent(unref(_sfc_main$B), { class: "-ml-1" }, null, _parent));
       if (_ctx.breadcrumbs.length > 0) {
         _push(ssrRenderComponent(_sfc_main$3, { breadcrumbs: _ctx.breadcrumbs }, null, _parent));

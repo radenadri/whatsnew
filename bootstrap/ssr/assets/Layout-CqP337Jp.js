@@ -1,7 +1,7 @@
 import { defineComponent, useSSRContext, unref, mergeProps, withCtx, createTextVNode, toDisplayString, createVNode } from "vue";
 import { ssrRenderAttrs, ssrInterpolate, ssrRenderComponent, ssrRenderList, ssrRenderSlot } from "vue/server-renderer";
-import { a as _sfc_main$3 } from "./AppLayout-BOjmAFA8.js";
-import { _ as _sfc_main$4 } from "./AppLogoIcon-xe2zDqH9.js";
+import { a as _sfc_main$3 } from "./AppLayout-CA5Rf5nP.js";
+import { _ as _sfc_main$4 } from "./AppLogoIcon-Ds8xh4o4.js";
 import { Link } from "@inertiajs/vue3";
 const _sfc_main$2 = /* @__PURE__ */ defineComponent({
   __name: "HeadingSmall",
