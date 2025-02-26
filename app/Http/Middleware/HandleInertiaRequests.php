@@ -15,7 +15,18 @@ class HandleInertiaRequests extends Middleware
      *
      * @var string
      */
-    protected $rootView = 'app';
+    // protected $rootView = 'app';
+
+    public function rootView(Request $request)
+    {
+        $isAdminRoute = $request->segment(1) == 'admin';
+
+        if (!$isAdminRoute) {
+            return 'app-frontend';
+        }
+
+        return 'app-admin';
+    }
 
     /**
      * Determines the current asset version.

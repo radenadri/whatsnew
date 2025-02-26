@@ -9,7 +9,7 @@ export default defineConfig({
     plugins: [
         tailwindcss(),
         laravel({
-            input: ['resources/js/app.ts'],
+            input: ['resources/js/app.ts', 'resources/js/monospace.ts'],
             refresh: true,
         }),
         vue({

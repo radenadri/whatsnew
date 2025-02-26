@@ -1,7 +1,7 @@
 import { defineComponent, useSSRContext, unref, mergeProps, withCtx, createTextVNode, toDisplayString, createVNode } from "vue";
 import { ssrRenderAttrs, ssrInterpolate, ssrRenderComponent, ssrRenderList, ssrRenderSlot } from "vue/server-renderer";
-import { a as _sfc_main$3 } from "./AppLayout-CA5Rf5nP.js";
-import { _ as _sfc_main$4 } from "./AppLogoIcon-Ds8xh4o4.js";
+import { a as _sfc_main$3 } from "./AppLayout-vjgb5Dbf.js";
+import { _ as _sfc_main$4 } from "./AppLogoIcon-D1xqdCb7.js";
 import { Link } from "@inertiajs/vue3";
 const _sfc_main$2 = /* @__PURE__ */ defineComponent({
   __name: "HeadingSmall",
@@ -62,15 +62,15 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     const sidebarNavItems = [
       {
         title: "Profile",
-        href: "/settings/profile"
+        href: "/admin/settings/profile"
       },
       {
         title: "Password",
-        href: "/settings/password"
+        href: "/admin/settings/password"
       },
       {
         title: "Appearance",
-        href: "/settings/appearance"
+        href: "/admin/settings/appearance"
       }
     ];
     const currentPath = window.location.pathname;
@@ -122,7 +122,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
       });
       _push(`<!--]--></nav></aside>`);
       _push(ssrRenderComponent(unref(_sfc_main$3), { class: "my-6 md:hidden" }, null, _parent));
-      _push(`<div class="flex-1 md:max-w-2xl"><section class="max-w-xl space-y-12">`);
+      _push(`<div class="flex-1 md:max-w-2xl"><section class="space-y-12 max-w-xl">`);
       ssrRenderSlot(_ctx.$slots, "default", {}, null, _push, _parent);
       _push(`</section></div></div></div>`);
     };

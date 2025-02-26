@@ -2,10 +2,11 @@ import { defineComponent, unref, mergeProps, withCtx, renderSlot, useSSRContext,
 import { ssrRenderComponent, ssrRenderSlot, ssrRenderAttrs, ssrRenderClass, ssrInterpolate, ssrRenderVNode, ssrRenderStyle, ssrRenderList, ssrRenderAttr } from "vue/server-renderer";
 import { cva } from "class-variance-authority";
 import { useForwardPropsEmits, DialogRoot, DialogClose, DialogDescription, DialogTitle, DialogTrigger, DialogPortal, DialogOverlay, DialogContent, createContext, Primitive, TooltipRoot, TooltipPortal, TooltipContent, TooltipTrigger, TooltipProvider, Separator, AvatarRoot, AvatarFallback, AvatarImage, DropdownMenuRoot, DropdownMenuCheckboxItem, DropdownMenuItemIndicator, DropdownMenuPortal, DropdownMenuContent, DropdownMenuGroup, useForwardProps, DropdownMenuItem, DropdownMenuLabel, DropdownMenuRadioGroup, DropdownMenuRadioItem, DropdownMenuSeparator, DropdownMenuSub, DropdownMenuSubContent, DropdownMenuSubTrigger, DropdownMenuTrigger } from "radix-vue";
-import { c as cn, _ as _sfc_main$1a, a as _sfc_main$1b } from "./AppLogoIcon-Ds8xh4o4.js";
+import { c as cn } from "./utils-QeSxawLU.js";
 import { X, PanelLeft, Check, Circle, ChevronRight, Settings, LogOut, ChevronsUpDown, LayoutGrid, Folder, BookOpen, MoreHorizontal } from "lucide-vue-next";
-import { _ as _sfc_main$19 } from "./Input-CozPTVk4.js";
+import { _ as _sfc_main$19 } from "./Input-QGpY-ymz.js";
 import { useMediaQuery, useVModel, useEventListener } from "@vueuse/core";
+import { _ as _sfc_main$1a, a as _sfc_main$1b } from "./AppLogoIcon-D1xqdCb7.js";
 import { usePage, Link } from "@inertiajs/vue3";
 const _sfc_main$18 = /* @__PURE__ */ defineComponent({
   __name: "Sheet",
@@ -3207,7 +3208,7 @@ const _sfc_main$b = /* @__PURE__ */ defineComponent({
     const mainNavItems = [
       {
         title: "Dashboard",
-        href: "/dashboard",
+        href: "/admin/dashboard",
         icon: LayoutGrid
       }
     ];

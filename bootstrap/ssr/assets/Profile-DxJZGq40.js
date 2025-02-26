@@ -2,16 +2,17 @@ import { defineComponent, unref, mergeProps, withCtx, renderSlot, useSSRContext,
 import { ssrRenderComponent, ssrRenderSlot, ssrRenderAttrs } from "vue/server-renderer";
 import { TransitionRoot } from "@headlessui/vue";
 import { useForm, usePage, Head, Link } from "@inertiajs/vue3";
-import { a as _sfc_main$b, _ as _sfc_main$h } from "./Layout-CqP337Jp.js";
-import { _ as _sfc_main$d, a as _sfc_main$f } from "./Label-Ci_t_JxO.js";
-import { c as cn, _ as _sfc_main$c } from "./AppLogoIcon-Ds8xh4o4.js";
+import { a as _sfc_main$b, _ as _sfc_main$h } from "./Layout-CoY8FkWQ.js";
+import { _ as _sfc_main$d, a as _sfc_main$f } from "./Label-DDXdtl7f.js";
+import { _ as _sfc_main$c } from "./AppLogoIcon-D1xqdCb7.js";
 import { useForwardPropsEmits, DialogRoot, DialogClose, DialogPortal, DialogOverlay, DialogContent, useForwardProps, DialogDescription, DialogTitle, DialogTrigger } from "radix-vue";
+import { c as cn } from "./utils-QeSxawLU.js";
 import { X } from "lucide-vue-next";
-import { _ as _sfc_main$e } from "./Input-CozPTVk4.js";
-import { _ as _sfc_main$g } from "./AppLayout-CA5Rf5nP.js";
+import { _ as _sfc_main$e } from "./Input-QGpY-ymz.js";
+import { _ as _sfc_main$g } from "./AppLayout-vjgb5Dbf.js";
+import "class-variance-authority";
 import "clsx";
 import "tailwind-merge";
-import "class-variance-authority";
 import "@vueuse/core";
 const _sfc_main$a = /* @__PURE__ */ defineComponent({
   __name: "Dialog",
@@ -910,7 +911,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     const breadcrumbs = [
       {
         title: "Profile settings",
-        href: "/settings/profile"
+        href: "/admin/settings/profile"
       }
     ];
     const page = usePage();
@@ -952,7 +953,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
                   }, _parent3, _scopeId2));
                   _push3(ssrRenderComponent(unref(_sfc_main$e), {
                     id: "name",
-                    class: "mt-1 block w-full",
+                    class: "block mt-1 w-full",
                     modelValue: unref(form).name,
                     "onUpdate:modelValue": ($event) => unref(form).name = $event,
                     required: "",
@@ -979,7 +980,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
                   _push3(ssrRenderComponent(unref(_sfc_main$e), {
                     id: "email",
                     type: "email",
-                    class: "mt-1 block w-full",
+                    class: "block mt-1 w-full",
                     modelValue: unref(form).email,
                     "onUpdate:modelValue": ($event) => unref(form).email = $event,
                     required: "",
@@ -997,7 +998,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
                       href: _ctx.route("verification.send"),
                       method: "post",
                       as: "button",
-                      class: "focus:outline-hidden rounded-md text-sm text-neutral-600 underline hover:text-neutral-900 focus:ring-2 focus:ring-offset-2"
+                      class: "text-sm underline rounded-md focus:outline-hidden text-neutral-600 hover:text-neutral-900 focus:ring-2 focus:ring-offset-2"
                     }, {
                       default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                         if (_push4) {
@@ -1020,7 +1021,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
                   } else {
                     _push3(`<!---->`);
                   }
-                  _push3(`<div class="flex items-center gap-4"${_scopeId2}>`);
+                  _push3(`<div class="flex gap-4 items-center"${_scopeId2}>`);
                   _push3(ssrRenderComponent(unref(_sfc_main$c), {
                     disabled: unref(form).processing
                   }, {
@@ -1075,7 +1076,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
                           }),
                           createVNode(unref(_sfc_main$e), {
                             id: "name",
-                            class: "mt-1 block w-full",
+                            class: "block mt-1 w-full",
                             modelValue: unref(form).name,
                             "onUpdate:modelValue": ($event) => unref(form).name = $event,
                             required: "",
@@ -1097,7 +1098,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
                           createVNode(unref(_sfc_main$e), {
                             id: "email",
                             type: "email",
-                            class: "mt-1 block w-full",
+                            class: "block mt-1 w-full",
                             modelValue: unref(form).email,
                             "onUpdate:modelValue": ($event) => unref(form).email = $event,
                             required: "",
@@ -1116,7 +1117,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
                               href: _ctx.route("verification.send"),
                               method: "post",
                               as: "button",
-                              class: "focus:outline-hidden rounded-md text-sm text-neutral-600 underline hover:text-neutral-900 focus:ring-2 focus:ring-offset-2"
+                              class: "text-sm underline rounded-md focus:outline-hidden text-neutral-600 hover:text-neutral-900 focus:ring-2 focus:ring-offset-2"
                             }, {
                               default: withCtx(() => [
                                 createTextVNode(" Click here to re-send the verification email. ")
@@ -1129,7 +1130,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
                             class: "mt-2 text-sm font-medium text-green-600"
                           }, " A new verification link has been sent to your email address. ")) : createCommentVNode("", true)
                         ])) : createCommentVNode("", true),
-                        createVNode("div", { class: "flex items-center gap-4" }, [
+                        createVNode("div", { class: "flex gap-4 items-center" }, [
                           createVNode(unref(_sfc_main$c), {
                             disabled: unref(form).processing
                           }, {
@@ -1182,7 +1183,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
                         }),
                         createVNode(unref(_sfc_main$e), {
                           id: "name",
-                          class: "mt-1 block w-full",
+                          class: "block mt-1 w-full",
                           modelValue: unref(form).name,
                           "onUpdate:modelValue": ($event) => unref(form).name = $event,
                           required: "",
@@ -1204,7 +1205,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
                         createVNode(unref(_sfc_main$e), {
                           id: "email",
                           type: "email",
-                          class: "mt-1 block w-full",
+                          class: "block mt-1 w-full",
                           modelValue: unref(form).email,
                           "onUpdate:modelValue": ($event) => unref(form).email = $event,
                           required: "",
@@ -1223,7 +1224,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
                             href: _ctx.route("verification.send"),
                             method: "post",
                             as: "button",
-                            class: "focus:outline-hidden rounded-md text-sm text-neutral-600 underline hover:text-neutral-900 focus:ring-2 focus:ring-offset-2"
+                            class: "text-sm underline rounded-md focus:outline-hidden text-neutral-600 hover:text-neutral-900 focus:ring-2 focus:ring-offset-2"
                           }, {
                             default: withCtx(() => [
                               createTextVNode(" Click here to re-send the verification email. ")
@@ -1236,7 +1237,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
                           class: "mt-2 text-sm font-medium text-green-600"
                         }, " A new verification link has been sent to your email address. ")) : createCommentVNode("", true)
                       ])) : createCommentVNode("", true),
-                      createVNode("div", { class: "flex items-center gap-4" }, [
+                      createVNode("div", { class: "flex gap-4 items-center" }, [
                         createVNode(unref(_sfc_main$c), {
                           disabled: unref(form).processing
                         }, {

@@ -1,15 +1,25 @@
 <?php
 
+use App\Http\Controllers\FrontController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
-Route::get('/', function () {
-    return Inertia::render('Welcome');
-})->name('home');
+Route::get('/', [FrontController::class, 'index'])->name('home');
+Route::get('/{slug}', [FrontController::class, 'show'])->name('show');
 
-Route::get('dashboard', function () {
-    return Inertia::render('Dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+if (env('APP_ENV') === 'local') {
+    Route::group(
+        [
+            'prefix' => 'admin',
+            'middleware' => ['auth', 'verified']
+        ],
+        function () {
+            Route::get('dashboard', function () {
+                return Inertia::render('admin/Dashboard');
+            })->name('dashboard');
+        }
+    );
 
-require __DIR__.'/settings.php';
-require __DIR__.'/auth.php';
+    require __DIR__ . '/settings.php';
+    require __DIR__ . '/auth.php';
+}

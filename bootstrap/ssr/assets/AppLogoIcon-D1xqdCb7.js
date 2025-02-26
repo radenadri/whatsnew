@@ -1,12 +1,8 @@
 import { defineComponent, unref, mergeProps, withCtx, renderSlot, useSSRContext } from "vue";
 import { ssrRenderComponent, ssrRenderSlot, ssrRenderAttrs } from "vue/server-renderer";
-import { clsx } from "clsx";
-import { twMerge } from "tailwind-merge";
+import { c as cn } from "./utils-QeSxawLU.js";
 import { Primitive } from "radix-vue";
 import { cva } from "class-variance-authority";
-function cn(...inputs) {
-  return twMerge(clsx(inputs));
-}
 const buttonVariants = cva(
   "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
   {
@@ -97,6 +93,5 @@ _sfc_main.setup = (props, ctx) => {
 };
 export {
   _sfc_main$1 as _,
-  _sfc_main as a,
-  cn as c
+  _sfc_main as a
 };

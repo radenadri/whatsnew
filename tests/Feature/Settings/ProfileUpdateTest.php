@@ -16,7 +16,7 @@ class ProfileUpdateTest extends TestCase
 
         $response = $this
             ->actingAs($user)
-            ->get('/settings/profile');
+            ->get('/admin/settings/profile');
 
         $response->assertOk();
     }
@@ -27,14 +27,14 @@ class ProfileUpdateTest extends TestCase
 
         $response = $this
             ->actingAs($user)
-            ->patch('/settings/profile', [
+            ->patch('/admin/settings/profile', [
                 'name' => 'Test User',
                 'email' => 'test@example.com',
             ]);
 
         $response
             ->assertSessionHasNoErrors()
-            ->assertRedirect('/settings/profile');
+            ->assertRedirect('/admin/settings/profile');
 
         $user->refresh();
 
@@ -49,14 +49,14 @@ class ProfileUpdateTest extends TestCase
 
         $response = $this
             ->actingAs($user)
-            ->patch('/settings/profile', [
+            ->patch('/admin/settings/profile', [
                 'name' => 'Test User',
                 'email' => $user->email,
             ]);
 
         $response
             ->assertSessionHasNoErrors()
-            ->assertRedirect('/settings/profile');
+            ->assertRedirect('/admin/settings/profile');
 
         $this->assertNotNull($user->refresh()->email_verified_at);
     }
@@ -67,7 +67,7 @@ class ProfileUpdateTest extends TestCase
 
         $response = $this
             ->actingAs($user)
-            ->delete('/settings/profile', [
+            ->delete('/admin/settings/profile', [
                 'password' => 'password',
             ]);
 
@@ -85,14 +85,14 @@ class ProfileUpdateTest extends TestCase
 
         $response = $this
             ->actingAs($user)
-            ->from('/settings/profile')
-            ->delete('/settings/profile', [
+            ->from('/admin/settings/profile')
+            ->delete('/admin/settings/profile', [
                 'password' => 'wrong-password',
             ]);
 
         $response
             ->assertSessionHasErrors('password')
-            ->assertRedirect('/settings/profile');
+            ->assertRedirect('/admin/settings/profile');
 
         $this->assertNotNull($user->fresh());
     }

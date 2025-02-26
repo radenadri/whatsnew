@@ -1,16 +1,17 @@
 import { defineComponent, mergeProps, unref, createVNode, resolveDynamicComponent, useSSRContext, withCtx } from "vue";
 import { ssrRenderAttrs, ssrRenderList, ssrRenderClass, ssrRenderVNode, ssrInterpolate, ssrRenderComponent } from "vue/server-renderer";
 import { Head } from "@inertiajs/vue3";
-import { u as useAppearance } from "../app.js";
+import { u as useAppearance } from "./useAppearance-acH1Gjpg.js";
 import { Sun, Moon, Monitor } from "lucide-vue-next";
-import { _ as _sfc_main$3, a as _sfc_main$4 } from "./Layout-CqP337Jp.js";
-import { _ as _sfc_main$2 } from "./AppLayout-CA5Rf5nP.js";
-import "./AppLogoIcon-Ds8xh4o4.js";
+import { _ as _sfc_main$3, a as _sfc_main$4 } from "./Layout-CoY8FkWQ.js";
+import { _ as _sfc_main$2 } from "./AppLayout-vjgb5Dbf.js";
+import "./AppLogoIcon-D1xqdCb7.js";
+import "./utils-QeSxawLU.js";
 import "clsx";
 import "tailwind-merge";
 import "radix-vue";
 import "class-variance-authority";
-import "./Input-CozPTVk4.js";
+import "./Input-QGpY-ymz.js";
 import "@vueuse/core";
 const _sfc_main$1 = /* @__PURE__ */ defineComponent({
   __name: "AppearanceTabs",

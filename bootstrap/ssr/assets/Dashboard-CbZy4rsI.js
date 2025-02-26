@@ -1,15 +1,16 @@
 import { defineComponent, computed, mergeProps, useSSRContext, unref, withCtx, createVNode } from "vue";
 import { ssrRenderAttrs, ssrRenderAttr, ssrRenderComponent } from "vue/server-renderer";
-import { _ as _sfc_main$2 } from "./AppLayout-CA5Rf5nP.js";
+import { _ as _sfc_main$2 } from "./AppLayout-vjgb5Dbf.js";
 import { Head } from "@inertiajs/vue3";
 import "class-variance-authority";
 import "radix-vue";
-import "./AppLogoIcon-Ds8xh4o4.js";
+import "./utils-QeSxawLU.js";
 import "clsx";
 import "tailwind-merge";
 import "lucide-vue-next";
-import "./Input-CozPTVk4.js";
+import "./Input-QGpY-ymz.js";
 import "@vueuse/core";
+import "./AppLogoIcon-D1xqdCb7.js";
 const _sfc_main$1 = /* @__PURE__ */ defineComponent({
   __name: "PlaceholderPattern",
   __ssrInlineRender: true,
@@ -39,7 +40,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     const breadcrumbs = [
       {
         title: "Dashboard",
-        href: "/dashboard"
+        href: "/admin/dashboard"
       }
     ];
     return (_ctx, _push, _parent, _attrs) => {
@@ -87,7 +88,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
 const _sfc_setup = _sfc_main.setup;
 _sfc_main.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/pages/Dashboard.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/pages/admin/Dashboard.vue");
   return _sfc_setup ? _sfc_setup(props, ctx) : void 0;
 };
 export {

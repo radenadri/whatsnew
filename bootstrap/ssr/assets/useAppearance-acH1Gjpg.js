@@ -1,5 +1,4 @@
-import { createInertiaApp } from "@inertiajs/vue3";
-import { ref, onMounted, createApp, h as h$1 } from "vue";
+import { ref, onMounted } from "vue";
 async function resolvePageComponent(path, pages) {
   for (const p2 of Array.isArray(path) ? path : [path]) {
     const page = pages[p2];
@@ -378,18 +377,9 @@ function useAppearance() {
     updateAppearance
   };
 }
-const appName = "Vue Starter Kit";
-createInertiaApp({
-  title: (title) => `${title} - ${appName}`,
-  resolve: (name) => resolvePageComponent(`./pages/${name}.vue`, /* @__PURE__ */ Object.assign({ "./pages/Dashboard.vue": () => import("./assets/Dashboard-CI7sjwtn.js"), "./pages/Welcome.vue": () => import("./assets/Welcome-Dr-7jBvn.js"), "./pages/auth/ConfirmPassword.vue": () => import("./assets/ConfirmPassword-D21kTr3m.js"), "./pages/auth/ForgotPassword.vue": () => import("./assets/ForgotPassword-BEMH28th.js"), "./pages/auth/Login.vue": () => import("./assets/Login-CUAvAdG_.js"), "./pages/auth/Register.vue": () => import("./assets/Register-BcdQadoN.js"), "./pages/auth/ResetPassword.vue": () => import("./assets/ResetPassword-CgBHN7aI.js"), "./pages/auth/VerifyEmail.vue": () => import("./assets/VerifyEmail-ByBk392O.js"), "./pages/settings/Appearance.vue": () => import("./assets/Appearance-BMblZwKh.js"), "./pages/settings/Password.vue": () => import("./assets/Password-DR9i_yHE.js"), "./pages/settings/Profile.vue": () => import("./assets/Profile-DMGj_yvz.js") })),
-  setup({ el, App, props, plugin }) {
-    createApp({ render: () => h$1(App, props) }).use(plugin).use(k).mount(el);
-  },
-  progress: {
-    color: "#4B5563"
-  }
-});
-initializeTheme();
 export {
+  initializeTheme as i,
+  k,
+  resolvePageComponent as r,
   useAppearance as u
 };

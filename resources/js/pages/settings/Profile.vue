@@ -23,7 +23,7 @@ defineProps<Props>();
 const breadcrumbs: BreadcrumbItem[] = [
     {
         title: 'Profile settings',
-        href: '/settings/profile',
+        href: '/admin/settings/profile',
     },
 ];
 
@@ -44,6 +44,7 @@ const submit = () => {
 
 <template>
     <AppLayout :breadcrumbs="breadcrumbs">
+
         <Head title="Profile settings" />
 
         <SettingsLayout>
@@ -53,34 +54,24 @@ const submit = () => {
                 <form @submit.prevent="submit" class="space-y-6">
                     <div class="grid gap-2">
                         <Label for="name">Name</Label>
-                        <Input id="name" class="mt-1 block w-full" v-model="form.name" required autocomplete="name" placeholder="Full name" />
+                        <Input id="name" class="block mt-1 w-full" v-model="form.name" required autocomplete="name"
+                            placeholder="Full name" />
                         <InputError class="mt-2" :message="form.errors.name" />
                     </div>
 
                     <div class="grid gap-2">
                         <Label for="email">Email address</Label>
-                        <Input
-                            id="email"
-                            type="email"
-                            class="mt-1 block w-full"
-                            v-model="form.email"
-                            required
-                            autocomplete="username"
-                            placeholder="Email address"
-                        />
+                        <Input id="email" type="email" class="block mt-1 w-full" v-model="form.email" required
+                            autocomplete="username" placeholder="Email address" />
                         <InputError class="mt-2" :message="form.errors.email" />
                     </div>
 
                     <div v-if="mustVerifyEmail && !user.email_verified_at">
                         <p class="mt-2 text-sm text-neutral-800">
                             Your email address is unverified.
-                            <Link
-                                :href="route('verification.send')"
-                                method="post"
-                                as="button"
-                                class="focus:outline-hidden rounded-md text-sm text-neutral-600 underline hover:text-neutral-900 focus:ring-2 focus:ring-offset-2"
-                            >
-                                Click here to re-send the verification email.
+                            <Link :href="route('verification.send')" method="post" as="button"
+                                class="text-sm underline rounded-md focus:outline-hidden text-neutral-600 hover:text-neutral-900 focus:ring-2 focus:ring-offset-2">
+                            Click here to re-send the verification email.
                             </Link>
                         </p>
 
@@ -89,16 +80,11 @@ const submit = () => {
                         </div>
                     </div>
 
-                    <div class="flex items-center gap-4">
+                    <div class="flex gap-4 items-center">
                         <Button :disabled="form.processing">Save</Button>
 
-                        <TransitionRoot
-                            :show="form.recentlySuccessful"
-                            enter="transition ease-in-out"
-                            enter-from="opacity-0"
-                            leave="transition ease-in-out"
-                            leave-to="opacity-0"
-                        >
+                        <TransitionRoot :show="form.recentlySuccessful" enter="transition ease-in-out"
+                            enter-from="opacity-0" leave="transition ease-in-out" leave-to="opacity-0">
                             <p class="text-sm text-neutral-600">Saved.</p>
                         </TransitionRoot>
                     </div>
